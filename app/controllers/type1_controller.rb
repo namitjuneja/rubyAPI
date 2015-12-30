@@ -25,6 +25,7 @@ class Type1Controller < ApplicationController
 			{"head" => Type1.find(j+1)["head"], "content" => Type1.find(j+1)["content"]}
 		]
 	        @user = {"name" => 'Max', "email" => ' m@m.com'}
+	        response.headers['Access-Control-Allow-Origin'] = '*'
 	        render json: @content
 	    end
 end
