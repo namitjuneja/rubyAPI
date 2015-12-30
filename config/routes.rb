@@ -4,6 +4,7 @@ Five::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
   get "type1" => "type1#index"
   get "type2" => "type2#index"
+   get "type2/index2" => "type2#index2"
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
