@@ -5,10 +5,10 @@ A REST API built with Ruby on Rails and MySQL.
 The application is hosted on [heroku](educruby.herokuapp.com) and has the following end points 
 
 
-  - [educruby.herokuapp.com/type1 ](educruby.herokuapp.com/type1)
+  - [educruby.herokuapp.com/type1 ](http://educruby.herokuapp.com/type1)
   
     This returns a json containing a list of 10 elements having a head and content key 
-  - [educruby.herokuapp.com/type2/?num=<element_id>](educruby.herokuapp.com/type2/?num=3)
+  - [educruby.herokuapp.com/type2/?num=<element_id>](http://educruby.herokuapp.com/type2/?num=3)
   
       This end point returns additional content for a given div which can be obtained by making ajax requests to the same
 
