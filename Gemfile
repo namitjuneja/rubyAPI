@@ -5,7 +5,14 @@ gem 'rails', '4.0.2'
 
 # Use mysql as the database for Active Record
 # gem 'mysql2'
-gem 'mysql2', '~> 0.3.18'
+group :production do
+	gem 'pg'
+	gem 'rails_12factor', '0.0.2'
+end
+
+group :development do 
+	gem 'mysql2', '~> 0.3.18'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -25,7 +32,7 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'rails_12factor', group: :production
+# gem 'rails_12factor', group: :production
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
@@ -34,6 +41,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+# gem 'mysql2'	
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
