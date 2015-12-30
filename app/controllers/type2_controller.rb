@@ -10,7 +10,6 @@ class Type2Controller < ApplicationController
 
   	
 
-  	@user = {"name" => 'Max', "email" => ' m@m.com'}
-  	render json: @user
+  	
   end
 end

@@ -1,0 +1,32 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Educatrium  Interview Project</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.0/foundation.min.css">
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/foundation/6.1.0/foundation.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
+</head>
+<body ng-app="main-app">
+
+	<div ng-controller="main-controller">
+	<table class="float-center" width = "100px" >
+	<td>
+			<div  width="400px" class="button" box-creator  ng-repeat="item in data_main" id = {{item.head}}>
+				
+
+				<h1 >{{item.head}}</h1>
+
+				<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+				<div>{{item.content}}</div>
+				<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+
+						
+			</div>
+	</td>
+		</div>
+	<table>
+
+</body>
+</html>

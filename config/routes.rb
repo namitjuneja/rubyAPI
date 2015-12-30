@@ -1,12 +1,14 @@
 Five::Application.routes.draw do
+  get "display/index"
   get "type2/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   get "type1" => "type1#index"
   get "type2" => "type2#index"
    get "type2/index2" => "type2#index2"
+   get "display" => 'display#index'
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'display#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
