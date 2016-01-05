@@ -22,7 +22,6 @@ It is contained inside the webview folder and is hosted [here](http://educ-int-p
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
 
 * [AngularJS](http://angularjs.org)
 * [Ruby on Rails](rubyonrails.org/)
